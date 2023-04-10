@@ -1,0 +1,11 @@
+CREATE DATABASE FEDERAL;
+
+USE FEDRRAL;
+
+CREATE table Alunos(
+nome VARCHAR(100),
+matriculo INT PRIMARY KEY, 
+telefone VARCHAR(20),
+turma VARCHAR(20)
+);
+
