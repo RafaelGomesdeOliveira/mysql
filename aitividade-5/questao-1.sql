@@ -8,13 +8,13 @@ CREATE TABLE areaa(
 );
 DROP table areaa;
 
-CREATE TABLE Livra(
+CREATE TABLE Livro(
     editora VARCHAR(20),
     anoPublicacao CHAR(4),
     autor VARCHAR(40),
     nome VARCHAR(60),
-    ISBN VARCHAR(13) PRIMARY KEY
-    
+    ISBN VARCHAR(13) PRIMARY KEY,
+    codArea SMALLINT
 );
-ALTER TABLE Livro ADD COLUMN codArea SMALLINT;
+
 ALTER TABLE Livro ADD FOREIGN KEY(codArea) REFERENCES areaa (codArea);
