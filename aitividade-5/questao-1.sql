@@ -17,4 +17,7 @@ CREATE TABLE Livro(
     codArea SMALLINT
 );
 
+ALTER TABLE areaa RENAME TO Areaa;
+
+
 ALTER TABLE Livro ADD FOREIGN KEY(codArea) REFERENCES areaa (codArea);
